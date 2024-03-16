@@ -66,6 +66,8 @@ protected:
     Vector2D M_pos; //!< global coordinate
     int M_pos_count; //!< main accuracy counter
 
+    Vector2D M_target; //!< player global target
+
     Vector2D M_seen_pos; //!< last seen global coordinate
     int M_seen_pos_count; //!< count since last observation
 
@@ -250,6 +252,16 @@ public:
     int posCount() const
       {
           return M_pos_count;
+      }
+
+    /*!
+      \brief get global player target
+      \return const reference to the point object
+    */
+    const
+    Vector2D & target() const
+      {
+          return M_target;
       }
 
     /*!

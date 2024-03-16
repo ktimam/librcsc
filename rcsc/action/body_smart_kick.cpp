@@ -62,9 +62,9 @@ Body_SmartKick::execute( PlayerAgent * agent )
 
     if ( ! wm.self().isKickable() )
     {
-        std::cerr << __FILE__ << ": " << __LINE__
-                  << " not ball kickable!"
-                  << std::endl;
+        //std::cerr << __FILE__ << ": " << __LINE__
+        //          << " not ball kickable!"
+        //          << std::endl;
         dlog.addText( Logger::ACTION,
                       __FILE__":  not kickable" );
         return false;
